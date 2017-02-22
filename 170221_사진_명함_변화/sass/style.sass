@@ -1,0 +1,77 @@
+*
+  margin: 0
+  padding: 0
+
+body
+  @extend %flex-center
+  height: 100vh
+
+%flex-center
+  justify-content: center
+  align-items: center
+  display: flex
+
+.warpper
+ display: flex
+ background: black
+ height: 200px
+ width: 600px
+ overflow: hidden
+
+
+ // transform: translateY(50%)
+ // overflow: hidden
+
+.name-Tag
+  // height: 200px
+  // height: 50%
+  // overflow: hidden
+  height: 400px
+  transition: all 1s ease-in-out
+  transform: translateY(0%)
+  &:hover
+   transform: translateY(-50%)
+   &::after
+      content: ''
+      display: block
+      background: transparent
+
+.display-1
+ background: rgb(150, 201, 73)
+ width: 200px
+ height: 200px
+ // overflow: hidden
+
+
+.display-2
+ background: #d74444
+ width: 200px
+ height: 200px
+
+
+
+.display-3
+ background: #c32cc6
+ width: 200px
+ height: 200px
+ // background-size: cover
+
+
+.background-1
+  background: black
+  color: white
+  width: 200px
+  height: 200px
+  // display: none
+
+.background-2
+  background: black
+  color: white
+  width: 200px
+  height: 200px
+
+.background-3
+  background: black
+  color: white
+  width: 200px
+  height: 200px
